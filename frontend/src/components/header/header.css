@@ -1,0 +1,174 @@
+.header {
+    position: fixed; /* Изменяем на fixed для крепления к верхней части окна */
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    z-index: 1000; /* Увеличивает порядок наложения, чтобы хедер был сверху других элементов */
+    display: flex;
+    
+    }
+    
+    @media (min-width: 1440px) {
+        .header { 
+            width: 100%; /* Занимает 100% ширины при более широкой области взгляда */
+        }
+    }
+    
+    
+    .menu {
+   /* меню */
+
+position: absolute;
+left: 68.61%;
+right: 2.08%;
+top: 40%;
+bottom: 20%;
+
+
+    }
+
+    .frame4{
+        /* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 352px;
+right: 100px;
+top: 51.5%;
+bottom: 28.5%;
+
+
+    }
+    
+    .logo{
+    /* лого */
+    
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+    
+    
+    
+    
+    }
+    
+    .search-container{
+    /* Search */
+    
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 310px;
+    top: 40px;
+    
+    
+    }
+    
+    .search_btn {
+    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+    }
+    
+    .search{
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 310px;
+    top: 40px;
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+
+    .gl{
+        /* Главная */
+
+width: 69px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+    }
+
+    .sub{
+        /* Мои подписки */
+
+width: 122px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+    }
+
+.libr{
+    /* Библиотека */
+
+width: 101px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+

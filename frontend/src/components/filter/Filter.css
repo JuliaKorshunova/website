@@ -1,0 +1,258 @@
+.container__filter{
+/* Фильтрация */
+
+position: absolute;
+width: 260px;
+height: 420px;
+left: 30px;
+top: 50px;
+
+
+}
+
+.zagolov1{
+/* Фильтрация */
+
+position: absolute;
+width: 131px;
+height: 25px;
+left: 30px;
+top: 330px;
+
+/* platform/h2 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+
+color: #000000;
+
+
+
+
+}
+
+.zagolov2{
+/* Продолжительность */
+
+position: absolute;
+width: 147px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+color: #000000;
+
+
+}
+
+.category{
+   /* Категории */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 260px;
+height: 366px;
+left: 30px;
+top: 384px;
+
+}
+
+.prodolzhit{
+    /* Продолжительность */
+
+width: 260px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.time1{
+/* 15 мин. */
+
+position: absolute;
+width: 43px;
+height: 16px;
+left: 0px;
+top: 54px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 134%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+}
+
+.time2{
+    /* 40 мин. */
+
+position: absolute;
+width: 46px;
+height: 16px;
+left: 97px;
+top: 54px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 134%;
+/* identical to box height, or 16px */
+
+color: #000000;
+
+
+}
+
+.ellipse1{
+/* Ellipse 197 */
+
+position: absolute;
+width: 10px;
+height: 10px;
+left: 5px;
+top: 41px;
+
+/* sec */
+background: #69FF12;
+
+}
+
+.ellipse2{
+    /* Ellipse 198 */
+
+position: absolute;
+width: 10px;
+height: 10px;
+left: 115px;
+top: 41px;
+
+/* sec */
+background: #69FF12;
+
+}
+
+.vector1{
+/* Vector 15 */
+
+position: absolute;
+width: 260px;
+height: 0px;
+left: 0px;
+top: 46px;
+
+border: 2px solid #9E9E9E;
+
+}
+
+.vector2{
+    /* Vector 16 */
+
+position: absolute;
+width: 110px;
+height: 0px;
+left: 10px;
+top: 46px;
+
+/* sec */
+border: 2px solid #69FF12;
+
+}
+
+.upor{
+/* Упорядочить */
+
+width: 184px;
+height: 110px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+}
+
+.radbutton {
+    /* По дате загрузки */ 
+    width: 118px; 
+    height: 19px; 
+    font-family: 'Inter'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 134%; 
+    color: #000000; 
+   
+    /* Inside auto layout */
+    flex: none; 
+    order: 1; 
+    flex-grow: 0; 
+
+    /* Добавляем стиль для предотвращения переноса */
+    white-space: nowrap; /* Запрещает перенос слов на новую строку */
+}
+
+
+.cat{
+    /* Категории */
+
+width: 245px;
+height: 146px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+}
+
+.zagolov3{
+    /* Категории */
+
+position: absolute;
+width: 75px;
+height: 20px;
+left: 0px;
+top: 220px;
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+color: #000000;
+
+
+}

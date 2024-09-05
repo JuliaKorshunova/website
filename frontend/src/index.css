@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    height: 10000px;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 30px;
+}
+
+
+
+section {  
+    width: 540px;  
+    height: 270px; 
+    position: relative; /* Установите относительное позиционирование для секции */
+    left: 280px; /*  Смещаем карточку на 10px влево относительно ее позиции  */
+} 
+
+
+

@@ -1,0 +1,58 @@
+.library_container {
+    /* Group 8786 */
+ 
+    position: relative;  /*  Изменяем  на  relative  для  более  гибкого  позиционирования  */
+    width: 632px; 
+    height: 60px; 
+    left: 280px; 
+    top: 159px; 
+    display: flex; /*  Используем  flexbox  для  управления  расположением  */
+    align-items: center; /*  Выравниваем  текст  по  вертикали  */
+ }
+ 
+ .zagolovok1 {
+    /* Library */
+ 
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #0E0E0E;
+    margin-right: 10px; /*  Добавляем  отступ  между  "Library"  и  "-"  */
+ }
+ 
+ .subtitle1 {
+    /* — [ˈlaɪbrərɪ] (en.) библиотека */
+ 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 143%;
+    color: #6D6D6D;
+ }
+ 
+ .tab{
+ /* Табы */
+ 
+ /* Auto layout */
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding: 0px;
+ gap: 10px;
+ 
+ position: absolute;
+ width: 332px;
+ height: 40px;
+ left: 310px;
+ top: 250px;
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 

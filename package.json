@@ -1,0 +1,16 @@
+{
+  "name": "fullstak",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "express": "^4.19.2"
+  }
+}
