@@ -8,6 +8,15 @@
     src: url('C:\Users\Юлия\Desktop\FULLSTAK\frontend\src\fonts\SF-Pro-Display-Light.otf') format('truetype');
   }
 
+.card {
+  background: white; /* Цвет фона карточки */
+  border-radius: 10px; /* Закругление углов */
+  display: flex; /* Используем Flexbox для размещения элементов */
+  flex-direction: column; /* Вертикальное направление размещения */
+  overflow: hidden; /* Скрываем лишние части */
+  width: 100%; /* Занимает всю ширину доступного пространства */
+}
+
 .blackblock{
     position: absolute;
     left: 0%;
@@ -34,16 +43,19 @@
     section {
     /* card */
 
-    width: 540px;
+    width: 37,5vw;
     height: 270px;
-    
-    left: 310px;
+    right:30px;
     top: 320px;
     }
     
 
     
     .zagalovok{
+
+      white-space: nowrap;   /* Запретить перенос текста */
+      overflow: hidden;       /* Скрыть часть текста, если он не помещается */
+      text-overflow: ellipsis; /* Добавить многоточие в конце, если текст не помещается */  
     /* Деньги пришли */
     
     position: absolute;
@@ -62,12 +74,18 @@
     
     /* black */
     color: #0E0E0E;
-    
-    
-    
+    }
+
+    .container1{
+      width: 300px; 
     }
     
     .subtitle {
+
+    white-space: nowrap;   /* Запретить перенос текста */
+    overflow: hidden;       /* Скрыть часть текста, если он не помещается */
+    text-overflow: ellipsis; /* Добавить многоточие в конце, если текст не помещается */  
+
        /* Семейный бюджет */
     
     position: absolute;
@@ -213,6 +231,10 @@ flex-grow: 0;
     }
     
     .text1{
+
+    white-space: nowrap;   /* Запретить перенос текста */
+    overflow: hidden;       /* Скрыть часть текста, если он не помещается */
+    text-overflow: ellipsis; /* Добавить многоточие в конце, если текст не помещается */    
     /* Альфа-Банк */
     
     position: absolute;
@@ -236,6 +258,11 @@ flex-grow: 0;
     }
     
     .text2{
+
+    white-space: nowrap;   /* Запретить перенос текста */
+    overflow: hidden;       /* Скрыть часть текста, если он не помещается */
+    text-overflow: ellipsis; /* Добавить многоточие в конце, если текст не помещается */ 
+
     /* 123 подписчика */
     
     position: absolute;

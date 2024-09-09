@@ -5,10 +5,12 @@ import ellipse from './../../img/Ellipse 196.svg'
 export default function Card(props) {   
     console.log(props);   
     return (    
-      <section>    
+      <section section className="card">    
         <div className="blackblock">    
-          <div className="whiteblock">    
-            <h2 className='zagalovok'>{props.title}</h2>    
+          <div className="whiteblock">
+            <div className="container1">   
+            <h2 className='zagalovok'>{props.title}</h2> 
+            </div>    
             <h6 className='subtitle'>{props.subtitle}</h6>    
             <div className="categoryhastags"></div>   
             <div className="hashtags">   
