@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../../fonts/stolzl_regular.otf') format('opentype');
+  font-weight: normal;  /* Установите вес шрифта */
+  font-style: normal;   /* Установите стиль шрифта */
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/inter-regular.otf') format('opentype');
+  font-weight: normal;  /* Установите вес шрифта */
+  font-style: normal;   /* Установите стиль шрифта */
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../../fonts/SF-Pro-Display-Regular.otf') format('truetype'); /* Убедитесь, что путь указан правильно */
+  font-weight: normal; /* Установите нужный вес */
+  font-style: normal; /* Установите нужный стиль */
+}
+
+
+.card {
+    background: white; /* Цвет фона карточки */
+    width: 100%; /* Занимает всю ширину доступного пространства */
+    display: flex; /* Используем Flexbox для размещения элементов */
+    flex-direction: column; /* Вертикальное направление размещения */
+    overflow: hidden; /* Скрываем лишние части */
+}
+
+.blackblock{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0E0E0E;
+    }
+    
+    .whiteblock {
+    
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #FFFFFF;
+    border-radius: 40px;
+    
+    }
+    
+  .bgforbtn1{
+    width: 110px;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+
+ } 
+    
+    section {
+    /* card */
+
+    width: 37,5vw;
+    height: 270px;
+    }
+    
+
+    
+.zagalovok{
+
+      white-space: nowrap;   /* Запретить перенос текста */
+     
+     
+/* Деньги пришли */
+
+position: absolute;
+width: 165px;
+height: 25px;
+left: 20px;
+top: 20px;
+
+/* platform/h2 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+
+/* black */
+color: #0E0E0E;
+
+
+    }
+
+    .container1{
+      width: 300px; 
+    }
+    
+    .subtitle {
+
+    white-space: nowrap;   /* Запретить перенос текста */
+   
+    
+
+/* Семейный бюджет */
+
+position: absolute;
+width: 151px;
+height: 20px;
+left: 20px;
+top: 54px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+    
+     
+    }
+    
+    .hashtags {
+/* Категории */ 
+     
+position: absolute; 
+height: 24px; 
+left: 20px;
+top: 84px; 
+ 
+/* Frame 9 */ 
+ 
+/* Auto layout */ 
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+padding: 0px; 
+gap: 10px; 
+ 
+position: absolute; 
+width: 288px; 
+height: 20px; 
+ 
+/* #воспитание */ 
+ 
+/* platform/txt */ 
+font-family: 'SF Pro Display'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 126%; 
+/* or 20px */ 
+ 
+/* fourth */ 
+color: #FF7510; 
+ 
+ 
+/* Inside auto layout */ 
+flex: none; 
+order: 2; 
+flex-grow: 0; 
+ 
+
+}
+
+
+.hastags1{
+ /* #образование */
+
+
+height: 20px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* fourth */
+color: #FF7510;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+    
+    .time{
+ /* 34 мин. */
+
+position: absolute;
+width: 61px;
+height: 20px;
+left: 20px;
+top: 114px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* subt */
+color: #6D6D6D;
+
+
+    }
+    
+    .picture{
+    /* image 293 */
+    
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    right: 3px;
+    top: 3px;
+    
+    
+    border-radius: 40px;
+    
+    
+    }
+    
+    .container{
+    
+    /* author */
+    
+    position: absolute;
+    width: 137px;
+    height: 40px;
+    left: 20px;
+    bottom: 70px;
+    
+    
+    
+    }
+    
+    .text1 { 
+      position: absolute; 
+      left: 36.5%; 
+      right: -5.11%; 
+      top: 5%; 
+      bottom: 45%; 
+  
+      /* platform/txt */ 
+      font-family: 'Inter'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 16px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+      
+  }
+  
+  .text2 { 
+      position: absolute; 
+      left: 36.5%; 
+      right: 1.46%; 
+      top: 55%; 
+      bottom: 7.5%; 
+  
+      font-family: 'SF Pro Display'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 12px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+
+      
+  }
+    
+   
+    
+    .btnn{
+      margin-top:210px;
+      margin-left: 20px;
+    }

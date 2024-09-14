@@ -1,0 +1,132 @@
+.card {
+    background: white; /* Цвет фона карточки */
+    width: 100%; /* Занимает всю ширину доступного пространства */
+    display: flex; /* Используем Flexbox для размещения элементов */
+    flex-direction: column; /* Вертикальное направление размещения */
+    overflow: hidden; /* Скрываем лишние части */
+}
+
+.blackblock{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0E0E0E;
+}
+    
+.whiteblock {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+
+.name{
+/* Александра Митрошина */
+
+position: absolute;
+left: 20px;
+right: 60.56%;
+top: 7.41%;
+bottom: 74.07%;
+
+/* platform/h2 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* or 25px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+.subsrubes{
+    /* 359 тыс. подписчиков */
+
+position: absolute;
+left: 20px;
+right: 63.89%;
+top: 29.26%;
+bottom: 63.33%;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+.content{
+/* 233 выпуска */
+
+position: absolute;
+left: 20px;
+right: 77.78%;
+top: 64.44%;
+bottom: 28.15%;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+white-space: nowrap; /* Запретить перенос на новую строку */
+
+
+}
+
+.btnn{
+    margin-top:210px;
+    margin-left: 20px;
+}
+
+
+
+.bgforbtn{
+    width: 110px;
+    height: 40px;
+    
+    
+    background: black;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+
+}
+
+.photo{
+    /* image 293 */
+    
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    right: 3px;
+    top: 3px;
+    
+    
+    border-radius: 40px;
+
+}
+
