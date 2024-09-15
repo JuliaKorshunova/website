@@ -1,0 +1,297 @@
+.header {
+    position: fixed; /* Изменяем на fixed для крепления к верхней части окна */
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    z-index: 1000; /* Увеличивает порядок наложения, чтобы хедер был сверху других элементов */
+    display: flex;
+    
+    }
+    
+    @media (min-width: 1440px) {
+        .header { 
+            width: 100%; /* Занимает 100% ширины при более широкой области взгляда */
+        }
+    }
+
+    
+    
+    .menu {
+        display: flex;
+        align-items: center; /* Центровать элементы по вертикали */
+        justify-content: space-between; /* Равномерное распределение пространства */
+        padding: 10px 30px; /* Отступы внутри меню */
+        position: relative; /* Устанавливаем относительное позиционирование для дочерних элементов */
+        width: 100%; /* Занимает всю ширину родительского элемента */
+    }
+
+    .user_btn{
+        /* usr_btn */
+
+position: absolute;
+left: 95.14%;
+right: 2.08%;
+top: 40%;
+bottom: 20%;
+
+
+    }
+
+    .frame4{
+        /* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 352px;
+right: 100px;
+top: 51.5%;
+bottom: 28.5%;
+
+
+    }
+    
+    .logo{
+    /* лого */
+    
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    left: 30px;
+    top: 30px;
+    
+    
+    
+    
+    }
+    
+    .search-container{
+    /* Search */
+    
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 310px;
+    top: 40px;
+    
+    
+    }
+    
+    .search_btn {
+    
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 0px;
+    }
+    
+    .search{
+    position: absolute;
+    width: 540px;
+    height: 40px;
+    left: 310px;
+    top: 40px;
+    }
+    
+    
+    a {
+        text-decoration: none;
+    }
+
+    .gl{
+        /* Главная */
+
+width: 69px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+    }
+
+    .sub{
+        /* Мои подписки */
+
+width: 122px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+    }
+
+.libr{
+ /* Библиотека */
+
+width: 101px;
+height: 20px;
+
+/* platform/h3 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 124%;
+/* identical to box height, or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+}
+
+.search { 
+/* Search */
+position: absolute;
+height: 40px;
+left: 310px;
+top: 40px;
+width: 38%;
+} 
+
+.rectangle_15 { 
+    position: absolute; 
+    left: 0%; 
+    right: 0%; 
+    top: 0%; 
+    bottom: 0%; 
+    background: #69FF12; 
+    border: none; 
+} 
+
+.rectangle_16 { 
+    position: absolute; 
+    left: 0%; 
+    right: 0%; 
+    top: 0%; 
+    bottom: 0%; 
+    background: #FFFFFF; 
+    border-radius: 13px; 
+    border: none; 
+    padding: 20px;
+    /* platform/txt */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    /* or 20px */
+
+    /* subt */
+    color: #6D6D6D;
+
+}
+
+.rectangle_16:focus {
+    outline: none; 
+}
+
+/* Стили для placeholder */
+.rectangle_16::placeholder {
+/* Введите запрос */
+
+position: absolute;
+width: 124px;
+left: 20px;
+top: 25%;
+bottom: 25%;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* subt */
+color: #6D6D6D;
+
+}
+
+.search_btn {
+    background-color: #69FF12; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем обводку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    padding: 10px; /* Отступы */
+    margin-left: 10px; /* Отступ слева от поля ввода */
+}
+
+.search_btn:hover {
+    background-color: #57D60B; /* Цвет при наведении */
+}
+
+
+.bgforbtnn{
+
+    background: #69FF12;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+    width: 40px;
+    }
+
+    .test{
+        margin-top: 0px;
+        /* search_btn */
+
+position: absolute;
+width: 40px;
+height: 40px;
+right: 0px;
+top: 0px;
+
+
+}
+
+
+
+.usr_btnn {
+        margin-left: auto; /* Перемещает кнопку вправо */
+        margin-top: 20px; /* Добавляет отступ сверху, чтобы поднять кнопку вниз */
+}

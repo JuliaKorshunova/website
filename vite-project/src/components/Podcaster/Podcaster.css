@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Inter-MediumItalic';
+    src: url('src/fonts/Inter-MediumItalic.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('src/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Stolzl';
+    src: url('src/fonts/stolzl_regular.otf') format('truetype');
+  }
+
+
+.obedinenie{
+  /* overflow-x: hidden; */
+  display: grid; /* Включаем Grid */
+  grid-template-columns: 1fr; /* Одна колонка */
+  gap: 31px; 
+  position: relative;
+/* left: 21.25%;  */
+/* min-width: 76.39%; */
+width: 76vw;
+min-width: 900px;
+
+}
+.s {
+position: relative;
+
+height: auto;
+
+ /* 260px */
+
+}
+.profile{
+  /* Профиль */
+  
+  position: relative;
+  
+  height: 60px;
+  width: 21.18%; /* 305px */
+  
+  margin-top: 0px;
+  /* platform/h1 */
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin-bottom: 0px;
+  
+  }
+
+.whiteblock{
+    position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* white */
+background: #FFFFFF;
+border-radius: 40px;
+}
+
+.pinkblock{
+
+/* profile */
+/* Rectangle 11 */
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* main */
+background: #FF0074;
+
+}
+
+.thef{
+    /* Александра Митрошина */
+
+
+position: absolute;
+white-space: nowrap;
+left: 1.82%;
+right: 65.27%;
+top: 19px;
+bottom: 77.31%;
+margin: 0px;
+font-family: 'Inter-MediumItalic';
+font-style: italic;
+font-weight: 500;
+font-size: 30px;
+
+line-height: 134%;
+/* or 40px */
+
+/* black */
+color: #0E0E0E;
+
+}
+
+
+
+.thesec{/* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
+
+   /* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
+   white-space: nowrap;
+position: absolute;
+left: 1.82%;
+right: 48.45%;
+/* top: 20.62%; */
+bottom: 67.69%;
+/* top:5px; */
+margin: 0px;
+margin-top: 5px;
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+ }
+
+ .ssylka{
+    /* vk.com/user */
+
+position: relative;
+
+/* margin-left: 8px; */
+
+width: 100px;
+height: 100px;
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* subt */
+color: #6D6D6D;
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 7px;
+
+
+ }
+ .im1 {
+  /* link */
+
+position: relative;
+width: 24px;
+height: 24px;
+
+/* margin-right: 8px; */}
+
+ .seroe{
+    /* display:inline-block; */
+    gap:6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    left: 1.39%; /* 20px */
+    right: 67.24%; /* 967px */
+    bottom: 17.88%; /* 143px */
+   margin: 0px;
+   top: 9px;
+    position: absolute;
+ 
+
+ 
+ }
+ .button2{
+        top:2.5%;
+ }
+
+ .groupofbtn{
+
+  padding: 0px;
+  gap: 10px; /* 10px в процентах, если нужно, можно пересчитать */
+
+  width: 27.64%; /* 397px */
+  
+  left: 1.39%; /* 20px */
+  top: 200px; /* 200px */
+  /* Frame 8796 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+
+height: 40px;
+
+ }
+
+  .bgforbtn{
+width: 196px;
+height: 40px;
+
+
+background: #FF0074;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+ } 
+
+ 
+ .bgforbtn2{
+  width: 196px;
+  height: 40px;
+  
+  
+  background: #FF99C7;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+   } 
+
+
+   .pocastdis{
+    display: flex;
+flex-direction: row;
+align-items: center;
+width: 800px;
+   }
+  
+   .pocastdis p {
+
+    white-space: nowrap;
+    /* Чтобы стать подкастером необходимо набрать 100 подписчиков */
+
+width: auto;
+height: auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+/* margin-right: 242px; */
+
+/* platform/txt */
+font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* main */
+color: #FF0074;
+
+
+/* Inside auto layout */
+
+order: 2;
+flex-grow: 0;
+margin-left: 10px;
+
+}
+
+.countofsub{
+  /* Frame 10 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 241px;
+height: 19px;
+right: 30px;
+top: 30px;
+
+}
+
+
+.countofsub p {
+  /* 256 подписок */
+  white-space: nowrap;
+width: 96px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 134%;
+/* identical to box height, or 19px */
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.kos{
+  width: 260px;
+  height: 260px;
+}
+
+
+.person{
+  
+/* image 293 */
+
+position: relative;
+margin-top: 100px;
+
+
+
+}
+.obedineniesphoto{
+  /* top: 19.875%; */
+  position: relative;
+  display: flex;
+flex-direction: row;
+align-items: center;
+gap: 20px;
+overflow-x: hidden; 
+
+
+}
