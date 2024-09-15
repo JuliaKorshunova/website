@@ -23,6 +23,7 @@
     bottom: 0%;
     background: #FFFFFF;
     border-radius: 40px;
+<<<<<<< Updated upstream
 }
 
 .name{
@@ -46,6 +47,30 @@ line-height: 124%;
 color: #0E0E0E;
 
 
+=======
+    
+}
+
+.name { 
+    position: absolute; 
+    left: 20px; 
+    right: 60.56%; 
+    top: 7.41%; 
+    bottom: 74.07%; 
+
+    /* Параметры текста */
+    font-family: 'Stolzl'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 20px; 
+    line-height: 124%; 
+    color: #0E0E0E; 
+    max-width: 200px; /* Укажите нужную максимальную ширину */
+
+    /* Настройки для переноса текста */
+    white-space: normal; /* Позволяет тексту переноситься */
+    overflow-wrap: break-word; /* Переносит длинные слова на новую строку */
+>>>>>>> Stashed changes
 }
 
 .subsrubes{
@@ -103,8 +128,15 @@ white-space: nowrap; /* Запретить перенос на новую стр
 
 
 
+<<<<<<< Updated upstream
 .bgforbtn{
     width: 110px;
+=======
+
+
+.bgforbtn{
+    width: 199px;
+>>>>>>> Stashed changes
     height: 40px;
     
     

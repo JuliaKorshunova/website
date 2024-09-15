@@ -1,13 +1,16 @@
 .library_container {
-    /* Group 8786 */
- 
-    position: relative;  /*  Изменяем  на  relative  для  более  гибкого  позиционирования  */
-    width: 632px; 
-    height: 60px; 
-    left: 280px; 
-    top: 159px; 
-    display: flex; /*  Используем  flexbox  для  управления  расположением  */
-    align-items: center; /*  Выравниваем  текст  по  вертикали  */
+   /* Group 8786 */
+
+position: absolute;
+width: 632px;
+height: 60px;
+left: 306px;
+top: 159px;
+
+display: flex; /* Это позволит отображать элементы в одну строку */
+align-items: center; /* Выравниваем по центру по вертикали, если нужно */
+    justify-content: space-between; /* Устанавливаем расстояние между элементами */
+
  }
  
  .zagolovok1 {
@@ -45,9 +48,8 @@
  
  position: absolute;
  width: 332px;
- height: 40px;
  left: 310px;
- top: 250px;
+ top: 220px;
  }
  
 

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Podkasts.css';
-import Card from '../card/Card'; 
-import TheListenButton from '../Button/TheListenButton'
+import Card from '../card/CardForPodcast'; 
 
 export default function Podkasts({ searchTerm }) { 
     const [cards, setCards] = useState([]); 

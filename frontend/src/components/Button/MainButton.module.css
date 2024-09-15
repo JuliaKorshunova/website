@@ -1,44 +1,33 @@
-
-@font-face {
-    font-family: 'Inter-Medium';
-    src: url('C:\Users\Юлия\Desktop\FULLSTAK\frontend\src\fonts\Inter-Medium.otf') format('truetype');
-  }
-
+@font-face { 
+  font-family: 'Inter-Medium'; 
+  src: url('../../fonts/Inter-Medium.otf') format('opentype');
+  font-weight: 500; /* Или значение, которое соответствует стилю шрифта */
+  font-style: normal; 
+}
 
 .defmainbtn{
-    /* btn */
-  
+  /* btn */
   width: 196px;
   height: 40px;
-  font-family:  'Inter-Medium';
+  font-family: 'Inter-Medium';
   font-size: 16px;
   color: #FFFFFF;
-  position: relative;
-  white-space: nowrap;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 9px 20px 10px;
-  gap: 5px;
-  width: 196px;
-  height: 40px;
-  left: 0px;
-  top: 0px;
   background: #FF0074;
   border-radius: 13px;
   border: 0;
-   }
 
+  /* Flexbox для центрирования */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  /* Отступы для текста */
+  padding: 9px 20px 10px; 
+ }
 
-
-   .defmainbtn:hover {
-    /* Стили для hover-эффекта */
-    display: flex;
+ .defmainbtn:hover {
+  /* Стили для hover-эффекта */
+  display: flex;
 flex-direction: row;
 align-items: center;
 padding: 9px 20px 10px;
@@ -50,16 +39,16 @@ left: 0px;
 position: relative; 
 top: 0px;
 font-family:  'Inter-Medium';
-  font-size: 16px;
-  color: #000000;
-  
-  white-space: nowrap;
+font-size: 16px;
+color: #000000;
+
+white-space: nowrap;
 /* white */
 background: #FFFFFF;
 border-radius: 13px;
-  }
- .defmainbtn:active{
-    /* btn */
+}
+.defmainbtn:active{
+  /* btn */
 /* Frame 5 */
 
 /* Auto layout */
@@ -74,10 +63,10 @@ height: 40px;
 left: 0px;
 top: 0px;
 font-family:  'Inter-Medium';
-  font-size: 16px;
-  color: #000000;
-  
-  white-space: nowrap;
+font-size: 16px;
+color: #000000;
+
+white-space: nowrap;
 /* white */
 background: #FFE5F1;
 border-radius: 13px;
@@ -86,52 +75,52 @@ border-radius: 13px;
 
 
 .bdefmainbtn:active::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 196px;
-  height: 40px;
-  background-color: #0800ff;
-  transform: rotate(45deg);
+content: "";
+position: absolute;
+top: 5px;
+left: 5px;
+width: 196px;
+height: 40px;
+background-color: #0800ff;
+transform: rotate(45deg);
 }
 
 .bdefmainbtn:active::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 196px;
-  height: 40px;
-  background-color: #005eff;
-  transform: rotate(-45deg);
+content: "";
+position: absolute;
+top: 5px;
+right: 5px;
+width: 196px;
+height: 40px;
+background-color: #005eff;
+transform: rotate(-45deg);
 }
 
 
 .bdefmainbtn:hover::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 196px;
-  height: 40px;
-  background-color: #0800ff;
-  transform: rotate(45deg);
+content: "";
+position: absolute;
+top: 5px;
+left: 5px;
+width: 196px;
+height: 40px;
+background-color: #0800ff;
+transform: rotate(45deg);
 }
 
 .bdefmainbtn:hover::after {
-  content: "влвлвлвлв";
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 196;
-  height: 40;
-  background-color: #005eff;
-  transform: rotate(-45deg);
+content: "влвлвлвлв";
+position: absolute;
+top: 5px;
+right: 5px;
+width: 196;
+height: 40;
+background-color: #005eff;
+transform: rotate(-45deg);
 }
 
 .defmainbtndisabled{
-  /* btn */
+/* btn */
 /* Frame 5 */
 
 /* Auto layout */

@@ -1,28 +1,13 @@
-input[type="radio"] {
-    display: none; /* Скрыть стандартный элемент */
+.filtr__container{
+    /* Фильтрация */
+
+position: absolute;
+width: 260px;
+height: 420px;
+left: 30px;
+top: 330px;
 }
 
-.radbutton {
-    position: relative;
-    padding-left: 25px; /* Отступ для радиокнопки */
-    cursor: pointer;
-}
-
-.radbutton::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border: 2px solid #FF69B4; /* Розовая граница */
-    border-radius: 50%; /* Закругление */
-}
-
-input[type="radio"]:checked + .radbutton::before {
-    background-color: #FF69B4; /* Розовый цвет при выборе */
-}
 
 .container__filter{
 /* Фильтрация */
@@ -42,8 +27,6 @@ top: 50px;
 position: absolute;
 width: 131px;
 height: 25px;
-left: 0px;
-top: 330px;
 
 /* platform/h2 */
 font-family: 'Stolzl';
@@ -55,9 +38,6 @@ line-height: 124%;
 
 color: #000000;
 
-
-
-
 }
 
 .zagolov2{
@@ -67,7 +47,7 @@ position: absolute;
 width: 147px;
 height: 20px;
 left: 0px;
-top: 0px;
+top: px;
 
 /* platform/txt */
 font-family: 'SF Pro Display';
@@ -96,7 +76,28 @@ position: absolute;
 width: 260px;
 height: 366px;
 
-top: 384px;
+top: 29px;
+
+}
+.upor__zagolovok{
+    /* Упорядочить */
+
+position: absolute;
+width: 102px;
+height: 20px;
+left: 0px;
+top: 90px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+color: #000000;
+
 
 }
 

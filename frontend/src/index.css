@@ -9,26 +9,21 @@ body {
     color: #222;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    height: 10000px;
     width: 100%;
-    max-width: 100%;
     overflow-x: hidden;
+
 }
 
 .wrapper {
-    margin: 0 30px;
+ padding-left: 310px;
 }
+
+
 
 section {  
     min-width: 540px;  
     height: 270px; 
     position: relative; /* Установите относительное позиционирование для секции */
     gap: 20px; /* Устанавливаем расстояние между элементами */
-    right: 30px; /* Отступ от правого края */
-    left:280px;
-}
-
-
-
-
-
+    top: 261px;  
+} 

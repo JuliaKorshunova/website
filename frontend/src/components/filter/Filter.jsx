@@ -14,6 +14,7 @@ export default function Filter() {
 
     return (
         <>
+        <div className="filtr__container">
             <div className="zagolov1">Фильтрация</div>
             <div className="category">
                 <div className="prodolzhit">
@@ -25,6 +26,9 @@ export default function Filter() {
                 </div>
 
                 <div className="upor">
+                    <div className="upor__zagolovok">
+                        Упорядочить
+                    </div>
                     <label className="radbutton">
                         <input
                             type="radio"
@@ -60,6 +64,7 @@ export default function Filter() {
                 <div className="cat">
                     <div className="zagolov3">Категории</div>
                 </div>
+            </div>
             </div>
         </>
     );

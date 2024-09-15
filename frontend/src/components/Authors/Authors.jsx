@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 import CardForAuthors from '../card/CardForAuthors';
 import './Authors.css'
 import React, { useEffect, useState } from 'react';
 import podcastPicture from './../../img/image 293.jpg'
+=======
+import './Authors.css'
+import React, { useEffect, useState } from 'react';
+import podcastPicture from './../../img/image 293.jpg'
+import CardForAuthors from '../card/CardForAuthors';
+>>>>>>> Stashed changes
 export default function Authors() { 
 
     const authorsData = [ 

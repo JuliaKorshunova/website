@@ -118,6 +118,7 @@ const cardsData = [
   }  
 ];
 
+
 app.get('/api/cards', (req, res) => {
   res.json(cardsData); // Отправляем данные в формате JSON
 });
