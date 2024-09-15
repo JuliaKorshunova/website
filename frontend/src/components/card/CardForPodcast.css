@@ -21,7 +21,7 @@
 
 
 .card {
-<<<<<<< Updated upstream
+
     background: white; /* Цвет фона карточки */
     width: 100%; /* Занимает всю ширину доступного пространства */
     display: flex; /* Используем Flexbox для размещения элементов */
@@ -29,17 +29,9 @@
     overflow: hidden; /* Скрываем лишние части */
 }
 
-=======
-  background: white; /* Цвет фона карточки */
-  width: 37.5vw; /* Занимает всю ширину доступного пространства */
-  display: flex; /* Используем Flexbox для размещения элементов */
-  flex-direction: column; /* Вертикальное направление размещения */
-  overflow: hidden; /* Скрываем лишние части */
-  box-sizing: border-box; /* Убедитесь, что размеры учитывают отступы и границы */
-}
 
 
->>>>>>> Stashed changes
+
 .blackblock{
     position: absolute;
     left: 0%;
