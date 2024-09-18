@@ -1,7 +1,3 @@
-
-
-
-
 import './Authors.css'
 import React, { useEffect, useState } from 'react';
 import podcastPicture from './../../img/image 293.jpg'

@@ -26,25 +26,26 @@
     
 }
 
-.name { 
-    position: absolute; 
+
+
+.name {
+    position: absolute;
     left: 20px; 
     right: 60.56%; 
     top: 7.41%; 
     bottom: 74.07%; 
 
-    /* Параметры текста */
-    font-family: 'Stolzl'; 
-    font-style: normal; 
-    font-weight: 400; 
-    font-size: 20px; 
-    line-height: 124%; 
-    color: #0E0E0E; 
-    max-width: 200px; /* Укажите нужную максимальную ширину */
+    font-family: 'Stolzl';
+    font-style: normal;  
+    font-weight: 400;  
+    font-size: 20px;  
+    line-height: 124%;  
+    color: #0E0E0E;  
+    min-width: 200px; /* Укажите нужную максимальную ширину */ 
 
     /* Настройки для переноса текста */
     white-space: normal; /* Позволяет тексту переноситься */
-    overflow-wrap: break-word; /* Переносит длинные слова на новую строку */
+
 }
 
 .subsrubes{

@@ -1,6 +1,6 @@
 import './CardForAuthors.css'
 import MainButton2 from '../Button/MainButton2';
-import React, { useState } from 'react';
+import React, {  useState, useRef, useEffect } from 'react';
 export default function CardForAuthors({ author }) {  
     const { name, subscribers, episodes, picture, testDisabled } = author; // Деструктурируем здесь
 
@@ -16,8 +16,10 @@ export default function CardForAuthors({ author }) {
             <div className="blackblock"> 
                 <div className="whiteblock"> 
                     <img src={picture} className="photo" alt={name} /> 
-                    <div className="name">{name}</div> 
-                    <div className="subsrubes">{subscribers}</div> 
+                    <div className="info">  
+                        <div className="name">{name}</div> 
+                        <div className="subsrubes">{subscribers}</div>   
+                    </div>
                     <div className="content">{episodes}</div> 
                     <div className='btnn'> 
                         {testDisabled ? ( 

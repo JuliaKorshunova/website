@@ -182,30 +182,7 @@ flex-grow: 0;
 }
 
 
-.hastags1{
- /* #образование */
 
-
-height: 20px;
-
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
-
-/* fourth */
-color: #FF7510;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
     
     .time{
  /* 34 мин. */
@@ -309,3 +286,88 @@ color: #6D6D6D;
       margin-top:210px;
       margin-left: 20px;
     }
+
+    .categoryhastags { 
+      position: absolute;  
+      height: 24px;  
+      left: 20px; 
+      right: 53.7%;  
+      top: 84px;  
+      
+      
+  } 
+  
+  .rectangle_629 { 
+      position: absolute;  
+      height: 24px;  
+      left: 0%;  
+      right: 0%;  
+      top: 0px;  
+      z-index: 1; 
+      overflow: hidden;
+      
+
+  } 
+  .frame_9 { 
+      display: flex;  
+      flex-direction: row;  
+      align-items: flex-start;  
+      padding: 0px;  
+      gap: 10px;  
+      position: relative; 
+      width: 288px;  
+      height: 20px;  
+
+      
+
+  } 
+  .hastags1 {  
+    position: relative; 
+    font-family: 'Inter';   
+    font-style: normal;   
+    font-weight: 400;   
+    font-size: 16px;   
+    line-height: 126%;   
+    color: #FF7510; 
+
+
+    
+  } 
+  .last-hashtag {  
+    color: transparent; /* Делаем текст прозрачным для показа фона */
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    overflow: hidden;
+  }
+  
+  .hastags1::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: #FF7510;
+ 
+  }
+  
+  .last-hashtag::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: transparent; 
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+
+  }
+
+.gradient { 
+    background: linear-gradient(to right, #FF7510, white); 
+    -webkit-background-clip: text; /* Поддерживается в Chrome и Safari */ 
+    -webkit-text-fill-color: transparent; /* Задает цвет текста прозрачным */ 
+    z-index: 2; /* Убедитесь, что градиент выше */
+} 
+.orange { 
+    color: #FF7510; /* Оранжевый цвет текста для остальных случаев */ 
+}
