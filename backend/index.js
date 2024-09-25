@@ -10,7 +10,7 @@ const cardsData = [
     title: "Деньги пришли", 
     img: "http://localhost:3001/images/image 293.jpg",  
     subtitle: "Семейный бюджет", 
-    hashtags: "#воспитание #дизайн #воспитание #драма", 
+    hashtags: "#воспитание #дизайн #воспитание", 
     time: "34 мин.", 
     ellipse: "http://localhost:3001/images/Ellipse 196.svg",
     canal: "Альфа банк", 

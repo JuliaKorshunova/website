@@ -17,7 +17,7 @@ export default function App() {
             <div className="wrapper">  
                 <Header onSearchTermChange={setSearchTerm} />  
 
-                <Switch> {/* Заменено с Routes на Switch */}
+                <Switch> 
                     <Route path="/" exact component={Home} /> 
                     <Route path="/subscriptions" component={MySubscriptions} /> 
                     <Route path="/library" component={Library} /> 

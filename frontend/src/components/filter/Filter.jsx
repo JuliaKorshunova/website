@@ -62,7 +62,7 @@ export default function Filter() {
                 </div>
 
                 <div className="cat">
-                    <div className="zagolov3">Категории</div>
+                    <div className="zagolov3"></div>
                 </div>
             </div>
             </div>

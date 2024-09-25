@@ -1,0 +1,334 @@
+.group__8794{
+/* Group 8794 */
+
+
+
+height: 1661px;
+left: 25px;
+top: 149px;
+margin-right: 30px;
+
+
+
+}
+
+
+.frame__8793{
+/* Frame 8793 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 15px;
+
+position: absolute;
+width: 1104px;
+height: 175px;
+left: 306px;
+top: 139px;
+
+ 
+}
+
+.text__for__rich{
+/* Как стать богатым за 5 минут не выходя из дома */
+
+width: 1104px;
+height: 120px;
+
+/* platform/h1 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 60px;
+
+/* black */
+color: #0E0E0E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+position: relative;
+
+
+
+}
+
+.frame__8786{
+/* Frame 8786 */
+
+width: 1104px;
+height: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+position: relative;
+}
+
+.text__for__description{
+/* Описание курса, которое рассказывает о том, что этот курс рассказывает о том, что богатым можно стать за пять минут и вообще для этого даже не нужно выходить из дома. */
+
+position: absolute;
+width: 1104px;
+height: 40px;
+left: 3px;
+top: 0px;
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+   
+}
+
+.lessons{
+/* lessons */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: relative;
+height: 1350px;
+top: 136px;
+
+}
+
+
+.home_for_card_container {
+    display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 30px;  
+    position: absolute; 
+    min-width: 1100px; 
+    height: auto; 
+    min-height: 140px; 
+    right: 0px;
+    left:2px;
+}
+
+
+
+.releasephotoanddes {
+    /* margin-left: 30px; Отступ слева для releasephoto */
+
+ margin-left: 30px;
+
+ position: relative; /* Фиксированное позиционирование */; 
+    
+}
+
+.fix{
+    position: fixed;
+    top: 149px;
+    left: 30px;
+    right: 16px;
+  }
+  
+  .releasephoto {
+      height: 260px;
+      width: 260px; 
+      margin-bottom: 10px;
+     
+  }
+
+
+  .t1{
+    display: grid; /* Включаем Grid */
+  grid-template-columns: 1fr; /* Одна колонка */
+  gap: 15px; 
+  position: relative;
+  margin-bottom: 10px;
+}
+.t2{
+    display: flex; 
+    /* align-items: center; Центрируем элементы по вертикали */
+
+    padding: 0; /* Убедитесь, что нет дополнительных отступов */
+    position: relative; /* Для контекста позиционирования дочерних элементов */
+   
+
+  flex-direction: row;
+  gap: 10px;
+
+
+}
+
+.nazv{
+    /* Семейный бюджет */
+width: 259px;
+height: 25px;
+/* platform/h2 */
+font-family: 'Stolzl';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 124%;
+/* identical to box height, or 25px */
+margin: 0px;
+color: #000000;
+
+}
+
+.nazv1{
+/* Альфа-Банк */
+
+
+margin: 0px;
+/* platform/txt */
+font-family: 'Inter-Regular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+
+
+}
+
+
+.player {
+    margin-right: 30px;
+    width: 76vw;
+    background-color: none;
+   
+    /* width: 76.4vw; Задайте ширину, которая автоматически изменяется при масштабировании */
+    height: 38vw; /* Сохраните пропорции */
+   border-radius: 40px;
+    position: relative; /* Или оставьте без изменения, если не требуется абсолютное позиционирование */
+    min-width: 1100px;
+     border: none;
+}
+.bgg2{
+  width: 175px;
+  height: 40px;
+  background: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.kn{
+  margin-bottom: 20px;
+}
+.bgg{
+  width: 127px;
+  height: 40px;
+  background: #FF0074;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  }
+  .bgg3{
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  
+    }
+.nazv2{
+    /* Категории */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 0px 10px;
+margin-right: 20px;
+
+
+}
+.nazv3{
+   /* #образование */
+margin: 0px;
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* fourth */
+color: #FF7510;
+
+white-space: normal; /* Перенос строк по умолчанию */
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.obedineniep{
+    /* overflow-x: hidden; */
+    display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 31px; 
+    position: relative;
+  /* left: 21.25%;  */
+  /* min-width: 76.39%; */
+  width: 76vw;
+  min-width: 1100px;
+  /* height: 140px; */
+  height: auto;
+  min-height: 140px;
+  /* max-height: 500px;  */
+  
+  }
+  .sp {
+  position: relative;
+/*   
+  height: auto; */
+  
+   /* 260px */
+  
+  }
+
+  .frame_9{
+    /* Категории */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 0px 10px;
+
+position: absolute;
+width: 260px;
+height: 40px;
+left: 0px;
+top: 434px;
+
+
+  }

@@ -1,6 +1,6 @@
 import './CardForAuthors.css'
 import MainButton2 from '../Button/MainButton2';
-import React, {  useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react'; 
 export default function CardForAuthors({ author }) {  
     const { name, subscribers, episodes, picture, testDisabled } = author; // Деструктурируем здесь
 

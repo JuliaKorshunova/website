@@ -26,35 +26,32 @@
     
 }
 
-
-
 .name {
-    position: absolute;
+    position: absolute; 
     left: 20px; 
     right: 60.56%; 
     top: 7.41%; 
-    bottom: 74.07%; 
 
-    font-family: 'Stolzl';
-    font-style: normal;  
-    font-weight: 400;  
-    font-size: 20px;  
-    line-height: 124%;  
-    color: #0E0E0E;  
-    min-width: 200px; /* Укажите нужную максимальную ширину */ 
-
-    /* Настройки для переноса текста */
-    white-space: normal; /* Позволяет тексту переноситься */
-
-}
+    font-family: 'Stolzl'; 
+    font-style: normal; 
+    font-weight: 400; 
+    font-size: 20px; 
+    line-height: 1.24; /* Используйте относительное значение */
+    color: #0E0E0E; 
+ 
+    max-height: calc(2 * 1.24em); /* Устанавливаем максимальную высоту для 2 строк */
+    overflow: hidden; /* Скрываем переполненный текст */
+    text-overflow: ellipsis; /* Добавляем многоточие, если текст длиннее */
+    white-space: nowrap; /* Запретить перенос на новую строку */
+ }
 
 .subsrubes{
-    /* 359 тыс. подписчиков */
+/* 359 тыс. подписчиков */
 
 position: absolute;
 left: 20px;
 right: 63.89%;
-top: 29.26%;
+top: 59px;
 bottom: 63.33%;
 
 /* platform/txt */
@@ -67,7 +64,6 @@ line-height: 126%;
 
 /* black */
 color: #0E0E0E;
-
 
 }
 
@@ -102,10 +98,6 @@ white-space: nowrap; /* Запретить перенос на новую стр
 }
 
 
-
-
-
-
 .bgforbtn{
     width: 199px;
 
@@ -133,4 +125,3 @@ white-space: nowrap; /* Запретить перенос на новую стр
     border-radius: 40px;
 
 }
-
