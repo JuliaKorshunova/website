@@ -93,13 +93,13 @@ export default function Podcaster() {
 
 
                   {testDeisabled1 === true ? (
-                    <div className='bgforbtn2' id='1'> <SecondButton  children='Изменить профиль' disabled={testDeisabled1} /></div>
+                    <div className='bgforbtn2p' id='1'> <SecondButton  children='Изменить профиль' disabled={testDeisabled1} /></div>
                   )
                     : isHovered1 === true ? (
                       <div>
                         <SecondButton onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} children='Изменить профиль' disabled={testDeisabled1} />
                       </div>) : (
-                      <div className='bgforbtn' id='1'> <SecondButton onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} children='Изменить профиль' disabled={testDeisabled1} /></div>
+                      <div className='bgforbtnp' id='1'> <SecondButton onMouseEnter={handleMouseEnter1} onMouseLeave={handleMouseLeave1} children='Изменить профиль' disabled={testDeisabled1} /></div>
                     )}
 
 
@@ -113,7 +113,7 @@ export default function Podcaster() {
                     </div>
                   )
                     : isHovered === true ? (
-                      <div className='bgforbtn'>
+                      <div className='bgforbtnp'>
                         <Button onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} disabled={testDeisabled}>
                           Стать подкастером
                         </Button>

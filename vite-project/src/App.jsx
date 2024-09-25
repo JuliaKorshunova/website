@@ -9,6 +9,8 @@ import TabsSection from './components/TabsSection/TabsSection'
 import LentaSection from './components/LentaSection/LentaSection'
 import SubscribesSection from './components/SubscribesSection/SubscribesSection'
 import PlayListSection from './components/PlayListSection/PlayListSection'
+import { Registration } from './components/Forms/Registration'
+import { Auth } from './components/Forms/Aurh'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,12 +19,15 @@ function App() {
   return (
     <>
      {/* <Header/>  */}
-    
- <Release ></Release>
-     {/* <div className='conteiner'>
-     <div className='obedinen'> */}
+    {/* <div className='obedinen2'>
+       <Release></Release>
+    </div> */}
+{/* <Registration></Registration>
+<Auth></Auth> */}
+      <div className='conteiner'>
+     <div className='obedinen'> 
      
-{/* 
+
  <Podcaster/>
     <div className='obedinen1'>
     <TabsSection Active1={tab} onChange={(current)=>setTab(current)}/>
@@ -34,10 +39,10 @@ function App() {
          }
      {tab ==='playlist' ?  <PlayListSection/> : null }
      {tab ==='imagebutton' ?  null : null }
-</div> */}
-     {/* </div>
+</div> 
+     </div>
    
-    </div> */}
+    </div> 
     
     </>
   )

@@ -11,95 +11,85 @@
   src: url('src/fonts/stolzl_regular.otf') format('truetype');
 }
 
-.bottomob{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-/* gap:10px; */
-
+.sectionsub{
+  
+  width: 37,5vw;
+  /* height: 270px; */
+  height: 270px;
+  top: 0px;
+  margin-left: 0px;
+  min-width: 540px;
+  
+ 
 }
-.obedinenie12{
-display: grid; /* Включаем Grid */
-grid-template-columns: 1fr; /* Одна колонка */
-gap: 31px; 
-position: relative;
-/* left: 21.25%;  */
-/* min-width: 76.39%; */
-width: 37.5vw;
-height: 270px;
-margin-bottom: 30px;
-min-width: 900px;
-left: 280px;
-
-}
-.s {
-position: relative;
-
-height: auto;
-
-/* 260px */
-
-}
-.profile{
-/* Профиль */
-
-position: relative;
-
-height: 60px;
-width: 21.18%; /* 305px */
-
-margin-top: 0px;
-/* platform/h1 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 60px;
-line-height: 60px;
-color: #000000;
-margin-bottom: 0px;
-
+.cardsub {
+  background: white; /* Цвет фона карточки */
+  width: 100%; /* Занимает всю ширину доступного пространства */
+  display: flex; /* Используем Flexbox для размещения элементов */
+  flex-direction: column; /* Вертикальное направление размещения */
+  overflow: hidden; /* Скрываем лишние части */
+  position: relative;
+  height: 100%;
+   
 }
 
-.whiteblock1{
-  position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+.blackblocksub{
+    /* position: absolute; */
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #0E0E0E;
+    position: absolute;
+    }
+    
+    .whiteblocksub {
+    
+    
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #FFFFFF;
+    border-radius: 40px;
+    
+    }
+    
+  .bgforbtnsub{
+    width: 110px;
+    height: 40px;
+    
+    
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
 
-/* white */
-background: #FFFFFF;
-border-radius: 40px;
-}
+ } 
+    
+    .sectionsub {
+    /* card */
 
-.blackblock{
+    }
+    
 
-/* profile */
-/* Rectangle 11 */
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+    
+.zagalovoksub{
 
-/* main */
-background: #000000;
-
-}
-
-.thef1{
-  /* названиеплейлиста */
-
-/* Мои любимые блогеры */
+      white-space: nowrap;   /* Запретить перенос текста */
+     
+     
+/* Деньги пришли */
 
 position: absolute;
-width: 486px;
+width: 165px;
 height: 25px;
 left: 20px;
 top: 20px;
-margin-top: 0px;
-margin-bottom: 0px;
+margin: 0px;
 /* platform/h2 */
 font-family: 'Stolzl';
 font-style: normal;
@@ -112,299 +102,299 @@ line-height: 124%;
 color: #0E0E0E;
 
 
+    }
 
-}
+    .container1sub{
+      width: 300px; 
+    }
+    
+    .subtitlesub {
 
-.minitext{
+    white-space: nowrap;   /* Запретить перенос текста */
+   
+    
 
-  gap: 20px;
- margin-top: 54px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  margin-left: 20px;
+/* Семейный бюджет */
 
-margin-bottom: 0px;
-}
-
-
-.thesec1{/* По моим видео ты станешь блогером и начнешь зарабатывать. Подпишись🤟🏻 */
-
-/* 233 выпуска */
-
-/* position: absolute; */
-/* width: 100px;
-height: 20px; */
-/* padding-top: 9px; */
+position: absolute;
+width: 151px;
+height: 20px;
+left: 20px;
+/* top: 54px; */
+top: 54px;
+margin: 0px;
 /* platform/txt */
-font-family: 'SF Pro Display';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 126%;
 /* or 20px */
-margin-top: 0px;
+
 /* black */
 color: #0E0E0E;
-margin-bottom: 0px;
 
+
+    
+     
+    }
+    
+    .hashtagssub {
+/* Категории */ 
+     
+
+ 
+/* Frame 9 */ 
+ 
+/* Auto layout */ 
+display: flex; 
+flex-direction: row; 
+align-items: flex-start; 
+padding: 0px; 
+gap: 10px; 
+ 
+position: absolute; 
+
+height: 20px; 
+ 
+/* #воспитание */ 
+ 
+/* platform/txt */ 
+font-family: 'SF Pro Display'; 
+font-style: normal; 
+font-weight: 400; 
+font-size: 16px; 
+line-height: 126%; 
+/* or 20px */ 
+ 
+/* fourth */ 
+color: #FF7510; 
+ 
+left: 20px; 
+right: 70%;  
+top: 84px;  
+/* Inside auto layout */ 
+flex: none; 
+order: 2; 
+flex-grow: 0; 
+ 
 
 }
 
-.des1{
-  /* vk.com/user */
-/* Нет описания */
 
-position: absolute;
+.hastags1sub{
+ /* #образование */
+
+ 
+height: 20px;
+
+/* platform/txt */
+font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 126%;
 /* or 20px */
-font-family: 'SF Pro Display';
-/* subt */
-color: #6D6D6D;
-margin-top: 9px;
-margin-left: 20px;
 
-}
-.des2{
-/* vk.com/user */
-/* Нет описания */
-/* 
-position: absolute; */
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
-font-family: 'SF Pro Display';
-/* subt */
-color: #6D6D6D;
+/* fourth */
+color: #FF7510;
 
 
-}
-
-
-
-.button2{
-      top:2.5%;
-}
-
-.groupofbtn1{
-
-padding: 0px;
-gap: 10px; /* 10px в процентах, если нужно, можно пересчитать */
-
-
-left: 1.39%; 
-top: 200px; /* 200px */
-/* Frame 8796 */
-/* width: 160px; */
-/* Auto layout */
-width: auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-position: absolute;
-
-height: 40px; }
-
-
-
-.bgforbtnnn{
-  width: 110px;
-  height: 40px;
-  
-  
-  background: #FF0074;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  padding: 0px;
-
-} 
-.bgforbtnn2{
-  width: 196px;
-  height: 40px;
-  
-  
-  background: #FF0074;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  
-   } 
-
-.bgforbtn2{
-width: 196px;
-height: 40px;
-
-
-background: #FF99C7;
+/* Inside auto layout */
 flex: none;
 order: 0;
 flex-grow: 0;
 
- } 
+}
+    
+    .timesub{
+ /* 34 мин. */
 
-
- .slushatdis{
-  display: flex;
-flex-direction: row;
-align-items: center;
-width: 800px;
- }
-
- .pocastdis p {
-
-  white-space: nowrap;
-  /* Чтобы стать подкастером необходимо набрать 100 подписчиков */
-
-width: auto;
-height: auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-/* margin-right: 242px; */
+position: absolute;
+width: 61px;
+height: 20px;
+left: 20px;
+top: 114px;
 
 /* platform/txt */
-font-family: 'SF Pro Display';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 126%;
 /* or 20px */
 
-/* main */
-color: #FF0074;
+/* subt */
+color: #6D6D6D;
 
 
-/* Inside auto layout */
-
-order: 2;
-flex-grow: 0;
-margin-left: 10px;
-
-}
-
-.picturess{
-/* Frame 10 */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-
-right:297px;
-position: absolute;
-width: 241px;
-height: 19px;
-/* right: 350px; */
-top: 122px;
-
-}
-
-.picturessone {
-/* image 293 */
-white-space: nowrap;
-
-
-position: relative;
-width: 264px;
-height: 264px;
-/* right: -60px; */
-top: 3px;
-border-radius: 40px;
-z-index: 4;
-
-}
-.picturesstwo{
- 
+    }
+    
+    .picturesub{
+    /* image 293 */
+    
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    right: 3px;
+    top: 3px;
+    z-index: 100;
+    
+    border-radius: 40px;
+    
+    
+    }
+     
+    .picturesub1{
       /* image 293 */
-       /* right: 90px;  */
-      position: relative;
+      
+      position: absolute;
       width: 264px;
       height: 264px;
-      margin-left: -174px; 
+      right: 30px;
       top: 3px;
-      border-radius: 40px;
-      z-index: 3;
+      z-index: 99;
       
-}
-.picturessthree{
+      border-radius: 40px;
+      
+      
+      }
+    
+    .containersub{
+    
+    /* author */
+    
+    position: absolute;
+    width: 137px;
+    height: 40px;
+    left: 20px;
+    bottom: 70px;
+    
+    
+    
+    }
+    
+    .text1sub { 
+      position: absolute; 
+      left: 36.5%; 
+      right: -5.11%; 
+      top: 5%; 
+      bottom: 45%; 
+  
+      /* platform/txt */ 
+      font-family: 'Inter'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 16px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+      
+  }
+  
+  .text2sub { 
+      position: absolute; 
+      left: 36.5%; 
+      right: 1.46%; 
+      top: 55%; 
+      bottom: 7.5%; 
+  
+      font-family: 'SF Pro Display'; 
+      font-style: normal; 
+      font-weight: 400; 
+      font-size: 12px; 
+      line-height: 126%; 
+  
+      /* black */ 
+      color: #0E0E0E; 
+  
+      /* Запрещаем перенос */
+      white-space: nowrap;  
+
+      
+  }
+    
+   
+    
+    .btnnsub{
+      margin-top:210px;
+      margin-left: 20px;
+    }
+
+    .categoryhastags { 
+      position: absolute;  
+      height: 24px;  
+      left: 20px; 
+      right: 53.7%;  
+      top: 84px;  
+      
+      
+  } 
+  
+    .frame_9 {  
+      display: flex;   
+      flex-direction: row;   
+      align-items: flex-start;   
+      padding: 0px;   
+      gap: 10px;   
+      position: relative;  
+      width: 288px;   
+      height: 20px;   
+    
+       
  
-  /* image 293 */
-   /* right: 360px;  */
-  position: relative;
-  width: 264px;
-  height: 264px;
-  margin-left: -174px; 
-  top: 3px;
-  border-radius: 40px;
-  z-index: 2;
-  
-}
-
-.picturessfour{
+  }  
+  .hastags1 {   
+    position: relative;  
+    font-family: 'Inter';    
+    font-style: normal;    
+    font-weight: 400;    
+    font-size: 16px;    
+    line-height: 126%;    
+    color: #FF7510;  
  
-  /* image 293 */
-   /* right: 540px;  */
-  position: relative;
-  width: 264px;
-  height: 264px;
-  margin-left: -174px; 
-  top: 3px;
-  border-radius: 40px;
-  z-index: 1;
+ 
+     
+  }  
+  .last-hashtag {  
+    color: transparent; /* Делаем текст прозрачным для показа фона */
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    overflow: hidden;
+  }
   
-}
-
-
-
-
-.kos{
-width: 260px;
-height: 260px;
-}
-
-
-.person{
-
-/* image 293 */
-
-position: relative;
-margin-top: 100px;
-
-
-
-}
-.obedineniesphoto{
-/* top: 19.875%; */
-position: relative;
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 20px;
-
-
-}
-
-.bgforbtnn3{
-
-
- background: #69FF12; 
-
-/* flex: none;
-order: 0;
-flex-grow: 0; */
-}
-.imageclass{
-  width: 40px;
-  height: 40px;
-  text-align: center;  
-  margin-top:13px; 
-  line-height: normal;
+  .hastags1::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: #FF7510;
+ 
+  }
   
+  .last-hashtag::before { 
+    content: attr(data-text); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    color: transparent; 
+    background: linear-gradient(90deg, rgba(255, 117, 16, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+
+  }
+
+.gradient { 
+    background: linear-gradient(to right, #FF7510, white); 
+    -webkit-background-clip: text; /* Поддерживается в Chrome и Safari */ 
+    -webkit-text-fill-color: transparent; /* Задает цвет текста прозрачным */ 
+    z-index: 2; /* Убедитесь, что градиент выше */
+} 
+.orange { 
+    color: #FF7510; /* Оранжевый цвет текста для остальных случаев */ 
 }

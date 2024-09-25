@@ -1,24 +1,11 @@
-import * as style1 from './OneSubcribe.css'
-import one from '/image 293.png'
-import two from '/image 294.png'
-import three from '/image 292.png'
-import four from '/image 293.png'
-import Button from '../Button/MainButton'
-import logo from '/logo-name.svg'
-import style from '../Button/MainButton.module.css'
-import { useState, useRef } from "react";
-import SecondButton from '../Button/SecondButton'
-import Button2 from '../Button/MainButton2'
-import lock from '/lock.png'
-import shuffle from '/shuffle.png'
-import SecondImgButton from '../Button/SecondImgButton'
-
-export default function OneSubcribe({ name, descriptionn, view, release,  image1, image2, image3, image4 }) {
-
-    let testDeisabled=false;
-    let testDeisabled1=false;
-    let countofsubcribeswenedd=100;
-
+import './OneSubcribe.css'
+import ellipse from '/Ellipse 196.png'
+import white from '/white.jpg'
+import picture from '/image 293.png'
+import MainButton2 from '../Button/MainButton2';
+import { hashtags } from '/src/components/Release/hashtags.js';
+import React, { useState, useRef, useEffect } from 'react';
+export default function OneSubcribe({ name, descriptionn, time, author, sub,  image1, image2, image3, image4 }) {   
 
   const[isHovered, setIsHovered]=useState(false)
   const handleMouseEnter = () => {
@@ -29,149 +16,106 @@ export default function OneSubcribe({ name, descriptionn, view, release,  image1
     setIsHovered(false);
   };
   
-  const[isHovered1, setIsHovered1]=useState(false)
-  const handleMouseEnter1 = () => {
-    setIsHovered1(true);
-  };
-
-  const handleMouseLeave1 = () => {
-    setIsHovered1(false);
-  };
-
-
-  const[isHovered2, setIsHovered2]=useState(false)
-  const handleMouseEnter2 = () => {
-    setIsHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setIsHovered2(false);
-  };
-
+  const testDeisabled=false;
 
 
   const [pressed, setPressed]=useState(false)
   function ispressed(){
     return(
-      setPressed(prevPressed => !prevPressed)),
-      setIsHovered(false)
+        setPressed(true))
     
   }
-  const [pressed1, setPressed1]=useState(false)
-  function ispressed1(){
-    return(
-        setPressed1(true))
-    
-  }
+
+  const [overlappingHashtags, setOverlappingHashtags] = useState([]); 
+
+const [isGradient, setIsGradient] = useState(false);  
+  const hashtagsRef = useRef(null);  
+  const imageRef = useRef(null);
+
+const checkCollision = () => { 
+  if (hashtagsRef.current && imageRef.current) { 
+      const hashtags = hashtagsRef.current.children; 
+      const imageRect = imageRef.current.getBoundingClientRect(); 
+      const overlaps = []; 
+
+      for (let i = 0; i < hashtags.length; i++) { 
+          const hashtagRect = hashtags[i].getBoundingClientRect(); 
+          const isOverlapping = !(hashtagRect.bottom < imageRect.top || 
+                                  hashtagRect.top > imageRect.bottom || 
+                                  hashtagRect.right < imageRect.left || 
+                                  hashtagRect.left > imageRect.right); 
+          if (isOverlapping) overlaps.push(i); 
+      } 
+
+      console.log('Перекрывающиеся хэштеги:', overlaps); // Вывод в консоль 
+      setOverlappingHashtags(overlaps); 
+  } 
+}; 
+useEffect(() => { 
+  checkCollision(); // Проверяем наложение при монтировании 
+  window.addEventListener('resize', checkCollision); // Проверяем при изменении размера окна 
+  return () => { 
+      window.removeEventListener('resize', checkCollision); // Очищаем обработчики 
+  }; 
+  }, []);
   
-    return(
-    
-      <div className='obedinenie12'>
-         
 
 
-
-          <section className='s'>
-
-            <div className='kos'>
-
-            </div>
-
-            <div className="blackblock">
-              <div className="whiteblock1">
-                <h2 className='thef1'>Деньги пришли</h2>
-                <div className='minitext'>
-                   <h6 className='thesec1'>Семейный бюджет</h6>
-                 
-                </div>
-               
-
-                <div className='seroe1'>
-                  {/* <div className='a'><img className='im1' src={link} /> </div> */}
-                  <p className='des1'>{descriptionn}</p> </div>
-
-<p>{pressed}</p>
-
-         
-
-
-
-<div className='groupofbtn1'>
-    {pressed ? (
-        <div className={isHovered1 ? '' : 'bgforbtnn2'} id='1'>
-            <SecondButton 
-                children='Отменить подписку' 
-                onClick={ispressed} 
-                disabled={testDeisabled1} 
-                onMouseEnter={handleMouseEnter1} 
-                onMouseLeave={handleMouseLeave1}
-            />
-        </div>
-    ) : testDeisabled ? (
-        <div className='slushatdis'>
-            <Button2 disabled={true}>Слушать</Button2>
-            <p>Чтобы стать подкастером необходимо набрать {countofsubcribeswenedd} подписчиков</p>
-        </div>
-    ) : (
-        <div className={isHovered ? 'bgforbtnnn' : ''}>
-            <Button2 
-                onMouseEnter={handleMouseEnter} 
-                onClick={ispressed} 
-                onMouseLeave={handleMouseLeave} 
-                disabled={testDeisabled}
-            >
-                Слушать
-            </Button2>
-        </div>
-    )}
-
-    {/* Вторая кнопка */}
-    <div className="second-button-container">
-        {isHovered2 ? (
-            <SecondImgButton
-                isImg={true}
-                isActive={false} 
-                onMouseEnter={handleMouseEnter2}
-                onMouseLeave={handleMouseLeave2}
-            >
-                <img src={shuffle} alt={'Изображение кнопки'} />
-            </SecondImgButton>
-        ) : (
-          <div className='bgforbtnn3'>
-            <SecondImgButton
-                isImg={true}
-                isActive={false} 
-                onMouseEnter={handleMouseEnter2}
-                onMouseLeave={handleMouseLeave2}
-            >
-                <img src={shuffle} alt={'Изображение кнопки'} />
-            </SecondImgButton> </div>
-        )}
-    </div>
-
- <div className='bottomob'>
-    <div className="imageclass">
-        <img src={lock} alt={'Изображение кнопки'} /></div>
-  <p className='des2'>Только для вас</p> </div>       
-</div>
-
-
-            <div className='picturess'>
-
-              <div className='picturesone'></div>
-
-
-
-
-            </div>
+    // console.log(props);   
+    return (    
+      <div className='sectionsub'>
+      <div  className="cardsub">    
+        <div className="blackblocksub">    
+          <div className="whiteblocksub">
+            <div className="container1sub">   
+            <h2 className='zagalovoksub'>{ name}</h2> 
+            </div>    
+            <h6 className='subtitlesub'>{descriptionn}</h6>    
+            <div className="categoryhastagssub"></div>   
+            <div className="hashtagssub">   
+                
+            <div className="frame_9" ref={hashtagsRef}>     
+                    {hashtags.map((h, index) => ( 
+                            <div 
+                            key={index} 
+                            className={`hastags1 ${overlappingHashtags.includes(index) ? 'gradient' : 'orange'}`} 
+                            data-text={h.name} 
+                            > 
+                            {h.name} 
+                            </div> 
+                            ))} 
+                          </div>
               
-
+            </div>    
+            <div className="timesub">{time}</div>    
+            <img src={image3} alt='logo' className='picturesub' />    
+            <img src={image2} alt='logo' className='picturesub1' ref={imageRef} />    
+            <div className="containersub">    
+              <img src={image1} alt='logo' className='iconsub' />    
+              <div className="text1sub">{author}</div>    
+              <div className="text2sub">{sub} подписчиков</div>    
+              {/* {props.button}    */}
+            </div>    
+              <div className='btnnsub'>
+                 {testDeisabled === true ? (
+                    <div className='pocastdis'>
+                      <MainButton2 disabled={true}>Слушать</MainButton2>
+                      <p> Чтобы стать подкастером необходимо набрать подписчиков</p>
+                    </div>
+                  )
+                    : isHovered === true ? (
+                      <div className='bgforbtnsub'>
+                        <MainButton2 onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} disabled={testDeisabled}>
+                          Слушать
+                        </MainButton2>
+                      </div>) : (
+                      <MainButton2 onClick={ispressed} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} disabled={testDeisabled}>
+                        Слушать
+                      </MainButton2>)}
               </div>
-
-
-            </div>
-
-          </section></div>
-    )
-
+           
+          </div>    
+        </div>    
+      </div>    </div>
+    );      
 }

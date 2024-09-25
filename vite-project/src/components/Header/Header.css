@@ -1,46 +1,55 @@
 .header {
     position: fixed; /* Изменяем на fixed для крепления к верхней части окна */
-    width: 1440px;
-    height: 100px;
+    /* width: 1440px; */
+    height: 90px;
     left: 0px;
     top: 0px;
     background: #FFFFFF;
     z-index: 1000; /* Увеличивает порядок наложения, чтобы хедер был сверху других элементов */
     display: flex;
     
-    }
+    /* align-items: center; Центрируем элементы по вертикали */
+
+    padding: 0; /* Убедитесь, что нет дополнительных отступов */
+    position: absolute; /* Для контекста позиционирования дочерних элементов */
+/*    
+    justify-content: space-between; */
+    width: 100%;
+    /* padding: 0 30px; */
+    gap: 170px;
+
+
+
+  flex-direction: row;
+
     
+    }
+/*     
     @media (min-width: 1440px) {
         .header { 
-            width: 100%; /* Занимает 100% ширины при более широкой области взгляда */
+            width: 100%; 
         }
-    }
-
-    
-    
-    .menu {
-        display: flex;
-        align-items: center; /* Центровать элементы по вертикали */
-        justify-content: space-between; /* Равномерное распределение пространства */
-        padding: 10px 30px; /* Отступы внутри меню */
-        position: relative; /* Устанавливаем относительное позиционирование для дочерних элементов */
-        width: 100%; /* Занимает всю ширину родительского элемента */
-    }
-
-    .user_btn{
-        /* usr_btn */
-
-position: absolute;
-left: 95.14%;
-right: 2.08%;
-top: 40%;
-bottom: 20%;
-
-
-    }
-
-    .frame4{
-        /* Frame 4 */
+    } 
+  */
+.menu {   
+    right: 0px;
+    display: flex;   
+    align-items: center; /* Центрируем элементы по вертикали */   
+    justify-content: flex-end; /* Элементы привязаны к правой стороне */   
+  
+    position: absolute; /* Устанавливаем относительное позиционирование для дочерних элементов */   
+    margin-right: 30px;
+    margin-top: 30px;
+   width: 422px;
+    /* right: 0px; */
+}   
+ 
+.menu .active {  
+    color: #FF0074;  
+}  
+ 
+.frame4{
+    /* Frame 4 */
 
 /* Auto layout */
 display: flex;
@@ -50,19 +59,24 @@ align-items: center;
 padding: 0px;
 gap: 30px;
 
-position: absolute;
+
 width: 352px;
 right: 100px;
 top: 51.5%;
 bottom: 28.5%;
 
 
-    }
-    
-    .logo{
+}
+ 
+.usr___btn {   
+    margin-left: 31px; /* Отступ слева от кнопки */  
+    margin-top: 20px;
+}  
+ 
+.logo{
     /* лого */
     
-    position: absolute;
+    position: relative;
     width: 140px;
     height: 60px;
     left: 30px;
@@ -72,184 +86,102 @@ bottom: 28.5%;
     
     
     }
-    
-    .search-container{
-    /* Search */
-    
-    position: absolute;
-    width: 540px;
-    height: 40px;
-    left: 310px;
-    top: 40px;
-    
-    
-    }
-    
-    .search_btn {
-    
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0px;
-    top: 0px;
-    }
-    
-    .search{
-    position: absolute;
-    width: 540px;
-    height: 40px;
-    left: 310px;
-    top: 40px;
-    }
-    
-    
-    a {
-        text-decoration: none;
-    }
-
-    .gl{
-        /* Главная */
-
-width: 69px;
-height: 20px;
-
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 124%;
-/* identical to box height, or 20px */
-
-/* black */
-color: #0E0E0E;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-    }
-
-    .sub{
-        /* Мои подписки */
-
-width: 122px;
-height: 20px;
-
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 124%;
-/* identical to box height, or 20px */
-
-/* black */
-color: #0E0E0E;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-    }
-
-.libr{
- /* Библиотека */
-
-width: 101px;
-height: 20px;
-
-/* platform/h3 */
-font-family: 'Stolzl';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 124%;
-/* identical to box height, or 20px */
-
-/* main */
-color: #FF0074;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-}
-
+      
+ 
 .search { 
-/* Search */
-position: absolute;
+    /* Search */
+
+/* position: absolute; */
+width: 40vw;
 height: 40px;
-left: 310px;
+min-width: 540px;
+/* left: 310px; */
 top: 40px;
-width: 38%;
-} 
+position: relative;
 
-.rectangle_15 { 
-    position: absolute; 
-    left: 0%; 
-    right: 0%; 
-    top: 0%; 
-    bottom: 0%; 
-    background: #69FF12; 
-    border: none; 
-} 
 
-.rectangle_16 { 
-    position: absolute; 
-    left: 0%; 
-    right: 0%; 
-    top: 0%; 
-    bottom: 0%; 
-    background: #FFFFFF; 
-    border-radius: 13px; 
-    border: none; 
-    padding: 20px;
-    /* platform/txt */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 126%;
-    /* or 20px */
+display: flex; /* Активируем Flexbox */
+justify-content: space-between; /* Это выравнивает элементы по краям */
+align-items: center; /* Выровнять по центру по вертикали */
 
-    /* subt */
-    color: #6D6D6D;
-
+}   
+ 
+.search-container {
+   position: relative;
+    display: flex; /* Flexbox для управления внутренними элементами */
 }
 
-.rectangle_16:focus {
-    outline: none; 
-}
-
-/* Стили для placeholder */
-.rectangle_16::placeholder {
-/* Введите запрос */
-
-position: absolute;
-width: 124px;
-left: 20px;
-top: 25%;
-bottom: 25%;
-
-/* platform/txt */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 126%;
-/* or 20px */
-
-/* subt */
-color: #6D6D6D;
-
+ 
+.rectangle_15 {   
+    position: absolute;   
+    left: 0;   
+    right: 0;   
+    top: 0;   
+    bottom: 0;   
+    background: #69FF12;   
+    border: none;   
+    display: flex; /* Также можно сделать его flex-контейнером, если требуется */
+  
+}   
+ 
+.rectangle_16 {   
+    position: absolute;   
+    left: 0;   
+    right: 0;   
+    top: 0;   
+    bottom: 0;   
+    background: #FFFFFF;   
+    border-radius: 13px;   
+    border: none;   
+    padding: 20px;  
+    font-family: 'Inter';  
+    font-style: normal;  
+    font-weight: 400;  
+    font-size: 16px;  
+    line-height: 126%;  
+    color: #6D6D6D;  
+}  
+ 
+.rectangle_16:focus {  
+    outline: none;   
+}  
+ 
+.rectangle_16::placeholder {  
+    color: #6D6D6D;  
+}  
+ 
+.search_btn {  
+    background-color: #69FF12; /* Цвет кнопки поиска */  
+    width: 40px;  
+    height: 40px;  
+    position: absolute;  
+    right: 0;  
+    top: 0;  
+}  
+ 
+a {  
+    text-decoration: none;  
+} 
+ 
+.gl {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
+} 
+ 
+.sub {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
+} 
+ 
+.libr {  
+    font-family: 'Stolzl';  
+    font-weight: 400;  
+    font-size: 16px;  
+    color: #0E0E0E;  
 }
 
 .search_btn {
@@ -266,7 +198,6 @@ color: #6D6D6D;
     background-color: #57D60B; /* Цвет при наведении */
 }
 
-
 .bgforbtnn{
 
     background: #69FF12;
@@ -274,24 +205,13 @@ color: #6D6D6D;
     order: 0;
     flex-grow: 0; 
     width: 40px;
+    position: absolute;
     }
 
-    .test{
-        margin-top: 0px;
-        /* search_btn */
 
-position: absolute;
-width: 40px;
-height: 40px;
-right: 0px;
-top: 0px;
+.test{
+   right: 0;
+   width: 40px;
+   margin-left: auto; /* Отодвигаем .test к правому краю */
 
-
-}
-
-
-
-.usr_btnn {
-        margin-left: auto; /* Перемещает кнопку вправо */
-        margin-top: 20px; /* Добавляет отступ сверху, чтобы поднять кнопку вниз */
 }

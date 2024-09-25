@@ -5,7 +5,7 @@ import React from 'react';
 import './LentaSection.css'
 
 import * as style1 from './LentaSection.css'
-import PostSection from '../PostSection/PostSection';
+import PostSection from './PostSection/PostSection.jsx';
 export default function LentaSection() {
 
     return(
