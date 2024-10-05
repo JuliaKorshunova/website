@@ -6,78 +6,60 @@ import React, { useState, useRef, useEffect } from 'react';
 import SecondButton from '../Button/SecondButton';
 import SecondButtonBlack from '../Button/SecondButtonBlack.jsx';
 import { hashtags } from '../Home/hashtags.js';
-import releases from './releasesData';
-
+import vector22 from './../../img/chevron_left.svg';
+import ListenFromTheFirstIssue from '../Tab/ListenFromTheFirstIssue'
+import SecondButtonForTabs from "../Button/SecondButtonForTabs";
+import Header from '../header/Header.jsx';
 export default function Home() {
+
+    const handleClick = () => {
+        console.log('Слушать с первого выпуска Clicked!');
+    };
+
+    const [podcastReleases, setPodcastReleases] = useState([]); 
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/data.json'); // Путь к вашему JSON файлу
+                if (!response.ok) {
+                    throw new Error('Сеть не отвечает');
+                }
+                const data = await response.json();
+                setPodcastReleases(data.releases); // Устанавливаем состояние с загруженными данными
+            } catch (error) {
+                console.error('Ошибка при загрузке данных:', error);
+            }
+        };
+
+        fetchData(); // Вызов функции
+    }, []); // Пустой массив зависимостей: эффект выполнится один раз при монтировании компонента 
+
+
+
+
+
+
+
+
+
+
 
     const [overlappingHashtags, setOverlappingHashtags] = useState([]); 
 
-    const [isGradient, setIsGradient] = useState(false);  
+
       const hashtagsRef = useRef(null);  
       const imageRef = useRef(null);
     
-    const checkCollision = () => { 
-      if (hashtagsRef.current && imageRef.current) { 
-          const hashtags = hashtagsRef.current.children; 
-          const imageRect = imageRef.current.getBoundingClientRect(); 
-          const overlaps = []; 
+
     
-          for (let i = 0; i < hashtags.length; i++) { 
-              const hashtagRect = hashtags[i].getBoundingClientRect(); 
-              const isOverlapping = !(hashtagRect.bottom < imageRect.top || 
-                                      hashtagRect.top > imageRect.bottom || 
-                                      hashtagRect.right < imageRect.left || 
-                                      hashtagRect.left > imageRect.right); 
-              if (isOverlapping) overlaps.push(i); 
-          } 
+      const [tab, setTab] = useState('listenFirst'); // Устанавливаем вкладку на 'listenFirst'
+    const [searchTerm, setSearchTerm] = useState('');
     
-          console.log('Перекрывающиеся хэштеги:', overlaps); // Вывод в консоль 
-          setOverlappingHashtags(overlaps); 
-      } 
-    }; 
-    
-    useEffect(() => { 
-    checkCollision(); // Проверяем наложение при монтировании 
-    window.addEventListener('resize', checkCollision); // Проверяем при изменении размера окна 
-    return () => { 
-        window.removeEventListener('resize', checkCollision); // Очищаем обработчики 
-    }; 
-    }, []);
-    
-        const[isHovered1, setIsHovered1]=useState(false)
-      const handleMouseEnter1 = () => {
-        setIsHovered1(true);
-      };
-    
-      const handleMouseLeave1 = () => {
-        setIsHovered1(false);
-      };
-      const[isHovered2, setIsHovered2]=useState(false)
-      const handleMouseEnter2 = () => {
-        setIsHovered2(true);
-      };
-    
-      const handleMouseLeave2 = () => {
-        setIsHovered2(false);
-      };
       
       
       
-        const [activeIndex, setActiveIndex] = useState(null);
-        const [comment1, setComment1] = useState('');
-     
-    
-        
-    
-        
-        const [isImageVisible, setIsImageVisible] = useState(true);
-        const [isBlockVisible, setIsBlockVisible] = useState(false);
-    
-        const toggleImage = () => {
-            setIsImageVisible(prev => !prev);
-            setIsBlockVisible(prev => !prev); // Показать или скрыть блок
-        };
-       
+      
         const [pressed, setPressed]=useState(false)
       function ispressed(){
         return(
@@ -103,64 +85,59 @@ export default function Home() {
           setIsHoveredb(false);
         };
     
-      
-    
-    
-     
-            
+          
         const [showBlock, setShowBlock] = useState(false);
         
         
     
-      
-        const [isExpanded, setIsExpanded] = useState(false); // Состояние для контроля отображения текста
-    
-        const toggleText = () => {
-            setIsExpanded(!isExpanded); // Переключаем состояние
-        }
+
     
 
     return (
         <>
+            <Header  /> 
             <div className='releasephotoanddes'>
             <div className='fix'>
             <div><img className='releasephoto' src={releasephoto} alt="Release" /></div>
             
            
             <div className='t1'> 
-                <h6 className='nazv'>Семейный бюджет</h6>
+                <h6 className='nazv'></h6>
                 <div className='t2'>
                     <img className='' src={ellipse} alt="Release" />
                     <div>
-                        <h6 className='nazv1'>Альфа-банк</h6>
-                    <h6 className='nazv1'>123 подписчика</h6>
+                        <h6 className='nazv1'>Александра Митрошина</h6>
+                    <h6 className='nazv2'>12,3K подписчиков </h6>
                     </div>
                     
                 </div>
 
 
             </div>
-<div className='kn'>
-            {pressed ? (
-    <div className={isHoveredb ? '' : 'bgg2'} id='1'>
-        <SecondButtonBlack 
-            children='Отменить подписку' 
-            onClick={ispressed} 
-            onMouseEnter={handleMouseEnterb} 
-            onMouseLeave={handleMouseLeaveb}
-        />
-    </div>
-) : (
-    <div className={isHoveredb2 ? '' : 'bgg'}>
-        <SecondButton 
-            onMouseEnter={handleMouseEnterb2} 
-            onClick={ispressed} 
-            onMouseLeave={handleMouseLeaveb2} 
-        >
-          Подписаться
-        </SecondButton>
-    </div>
-)}</div>
+    <div className='kn'> 
+    {pressed ? ( 
+        <div className={isHoveredb ? '' : 'bgg2'} id='1'> 
+            <SecondButtonBlack  
+                className="second-button-black" // Добавьте класс
+                children='Отменить подписку'  
+                onClick={ispressed}  
+                onMouseEnter={handleMouseEnterb}  
+                onMouseLeave={handleMouseLeaveb} 
+            /> 
+        </div> 
+    ) : ( 
+        <div className={isHoveredb2 ? '' : 'bgg'}> 
+            <SecondButton  
+                className="second-button" // Добавьте класс
+                onMouseEnter={handleMouseEnterb2}  
+                onClick={ispressed}  
+                onMouseLeave={handleMouseLeaveb2}  
+            > 
+                Подписаться 
+            </SecondButton> 
+        </div> 
+    )} 
+</div>
  <div className="gray-line" />
             <div className='nazv2'>
                 {/* <h6 className='nazv3'>#образование</h6>
@@ -182,8 +159,19 @@ export default function Home() {
             </div>
         </div>
 
+  
+        <div className="frame__8815">
+          <div className="bread_crumbs1">Мои подписки</div>
+          <div className="bread_crumbs2">Как стать богатым за 5 минут не выходя из дома</div>
+
+
+            <img src={vector22} alt="" />
+
+
+        </div>
 
             <div className="group__8794">
+            
              <div className="frame__8793">
             <div className="text__for__rich">
                 Как стать богатым за 5 минут не выходя из дома
@@ -194,15 +182,27 @@ export default function Home() {
                 </div>
             </div>
             </div>
+            <div className="text__for__age">18+</div>
+            <div className="button-container"> 
+            <SecondButtonForTabs  
+            onClick={handleClick} 
+            className={pressed ? "active-button" : "inactive-button"} // Передаем разные классы
+            > 
+            Слушать с первого выпуска 
+            </SecondButtonForTabs>
+            </div>
+     
             <div className="lessons"> 
-            <div className="home_for_card_container">
-            {releases.map(mainPage => (
-              <CardForMain key={mainPage.id} mainPage={mainPage}/> 
-            ))}
+            <div className='home_for_card_container'> 
+                {podcastReleases.map(mainPage => ( 
+                    <CardForMain key={mainPage.id} mainPage={mainPage}/>  
+                ))} 
             </div>
 </div>
 
             </div>
+
+             
         </>
     );
 }

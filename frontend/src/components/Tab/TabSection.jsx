@@ -4,7 +4,7 @@ import SecondButtonForTabs from "../Button/SecondButtonForTabs";
 import './TabSection.css';
 import { useState, useRef } from "react";
 
-export default function TabsSection({Active1, onChange}) {
+export default function TabsSection({Active, onChange}) {
 
 
     
@@ -76,11 +76,11 @@ export default function TabsSection({Active1, onChange}) {
                 
 
 
-                <div className="tab">
+    <div className="tab">
     {buttons.map((button) => (
         <div key={button.value}>
             {/* Проверка на активное состояние */}
-            {Active1 === button.value ? (
+            {Active === button.value ? (
                 <SecondButtonForTabs
                     isActive={true}
                     onMouseEnter={button.handleMouseEnter}

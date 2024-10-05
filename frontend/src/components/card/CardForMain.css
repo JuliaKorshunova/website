@@ -9,7 +9,7 @@
     height: 200px; 
     position: relative; /* Установите относительное позиционирование для секции */
     gap: 20px; /* Устанавливаем расстояние между элементами */
-    top: 261px;
+
 }
 ._blackblock{
     position: absolute;
@@ -219,8 +219,7 @@ height: 40px;
 left: 280px;
 top: 140px;
 
-/* main */
-background: #FF0074;
+
 }
 
 

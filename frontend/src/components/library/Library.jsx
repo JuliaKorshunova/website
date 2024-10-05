@@ -3,12 +3,13 @@ import Podkasts from "../podcasts/Podkasts";
 import TabsSection from '../Tab/TabSection';  
 import Authors from '../Authors/Authors';   
 import React, { useState } from 'react'; // Импортируйте React и useState
-
+import Header from '../header/Header';
 export default function Library() {
     const [tab, setTab] = useState('pod');  
     const [searchTerm, setSearchTerm] = useState('');  
     return (       
         <>
+        <Header  />  
         <div className="library_container">
             <div className="zagolovok1">Library</div> 
             <div className="subtitle1"> —  [ˈlaɪbrərɪ] (en.) библиотека</div> 
@@ -19,7 +20,7 @@ export default function Library() {
                     {tab === 'pod' && <Podkasts searchTerm={searchTerm} />}  
                     {tab === 'kurs' && null}  
                     {tab === 'autor' && <Authors />}  
-                </div>
+        </div>
         </>
     )
 } 

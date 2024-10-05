@@ -55,7 +55,7 @@ useEffect(() => {
                   <h6 className='subtitle'>{props.subtitle}</h6>     
                   <div className="categoryhastags">       
                       <div className="rectangle_629">     
-                          <div className="frame_999" ref={hashtagsRef}>    
+                          <div className="__frame_9999" ref={hashtagsRef}>    
                           {props.hashtags.split(' ').map((hashtag, index) => (
                             <div
                             key={index}

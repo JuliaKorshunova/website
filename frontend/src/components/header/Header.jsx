@@ -55,6 +55,13 @@ export default function Header({ onSearchTermChange }) {
                     >
                         Библиотека
                     </NavLink>
+                    <NavLink
+                        to="/login"
+                        className="libr"
+                        activeClassName="active"
+                    >
+                        Вход
+                    </NavLink>
                 </div>
                 <img src={user} className="usr___btn" alt='user' />
             </nav>

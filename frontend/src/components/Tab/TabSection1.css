@@ -1,0 +1,32 @@
+.tab{
+    /* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+/* left: 280px; */
+position: relative;
+left: 0px;
+margin-top: 16px;
+
+    /* margin-top: 48%;  */
+
+}
+.bgforbtn3{
+
+background: #69FF12;
+flex: none;
+order: 0;
+flex-grow: 0; 
+}
+
+.image-button-class{
+    padding: 0px;
+}
+
+.simple-button-class{
+    padding: 9px 20px 10px;
+}
