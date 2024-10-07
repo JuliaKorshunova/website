@@ -1,0 +1,10 @@
+.obforlenta{
+
+  left: 200px;
+  right: 30px;
+  position: relative;
+  display: flex;            /* Включаем Flexbox */
+  flex-direction: column;  /* Располагаем элементы в столбец */
+  gap: 30px;   
+  
+}
