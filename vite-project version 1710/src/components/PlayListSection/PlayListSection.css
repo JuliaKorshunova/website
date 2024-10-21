@@ -1,0 +1,8 @@
+.vm{
+    /* left: 500px; */
+    margin-right: 30px;
+    position: relative;
+    display: flex;            /* Включаем Flexbox */
+    flex-direction: column;  /* Располагаем элементы в столбец */
+    /* gap: 50px;    */
+}

@@ -1,0 +1,224 @@
+.uslovie{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+  .textformodal{
+
+/* platform/txt */
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+text-align: center;
+
+/* black */
+color: #0E0E0E;
+
+margin: 0;
+padding: 0;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+  }
+  .textformodal1{
+
+    /* platform/txt */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 126%;
+    /* or 20px */
+    text-align: center;
+    
+    /* black */
+    color: red;
+    
+    margin: 0;
+    padding: 0;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    
+      }
+  .uslovie2{
+    display: grid; /* Включаем Grid */
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 6px; 
+    margin-left: 20px;
+    margin-top: 18px;
+ 
+  }
+
+  .radiobuttn{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+
+/* black */
+color: #0E0E0E;
+
+margin: 0;
+padding: 0;
+
+  }
+  .radiobuttn input[type='radio'] {
+    margin-right: 10px; /* Увеличение отступа справа от радиокнопки */
+  }
+
+  .radiobuttn input[type="radio"] {
+    appearance: none; /* Убираем стандартное отображение радиокнопки */
+    width: 20px;  /* Устанавливаем ширину радиокнопки */
+    height: 20px; /* Устанавливаем высоту радиокнопки */
+    border: 2px solid #ccc; /* Устанавливаем светло-серую границу */
+    border-radius: 50%; /* Делаем форму круглыми */
+    outline: none; /* Убираем обвод вокруг кнопки при фокусе */
+    cursor: pointer; /* Меняем курсор на указатель */
+    position: relative; /* Позволяет использовать абсолютное позиционирование для внутреннего круга */
+}
+
+/* При выборе радиокнопки */
+.radiobuttn input[type='radio']:checked {
+    border-color: #6D6D6D; /* Устанавливаем цвет границы при выборе */
+}
+
+/* Внутренний круг */
+.radiobuttn input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Центрируем */
+    top: 50%; /* Центрируем */
+    width: 10px; /* Устанавливаем размер внутреннего круга */
+    height: 10px; /* Устанавливаем размер внутреннего круга */
+    border-radius: 50%; /* Делаем внутренний круг круглым */
+    background-color: #FF0074; /* Цвет внутреннего круга */
+    transform: translate(-50%, -50%); /* Центрируем внутренний круг */
+}
+
+
+.radiobuttn1{
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+
+
+/* black */
+color: #0E0E0E;
+
+margin: 0;
+padding: 0;
+
+}
+.radiobuttn1 input[type='radio'] {
+  margin-right: 10px; /* Увеличение отступа справа от радиокнопки */
+}
+
+.radiobuttn1 input[type="radio"] {
+  appearance: none; /* Убираем стандартное отображение радиокнопки */
+  width: 20px;  /* Устанавливаем ширину радиокнопки */
+  height: 20px; /* Устанавливаем высоту радиокнопки */
+  border: 2px solid #ccc; /* Устанавливаем светло-серую границу */
+  border-radius: 50%; /* Делаем форму круглыми */
+  outline: none; /* Убираем обвод вокруг кнопки при фокусе */
+  cursor: pointer; /* Меняем курсор на указатель */
+  position: relative; /* Позволяет использовать абсолютное позиционирование для внутреннего круга */
+}
+
+/* При выборе радиокнопки */
+.radiobuttn1 input[type='radio']:checked {
+  border-color: #6D6D6D; /* Устанавливаем цвет границы при выборе */
+}
+
+/* Внутренний круг */
+.radiobuttn1 input[type='radio']:checked::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Центрируем */
+  top: 50%; /* Центрируем */
+  width: 6px; /* Устанавливаем размер внутреннего круга */
+  height: 6px; /* Устанавливаем размер внутреннего круга */
+  border-radius: 50%; /* Делаем внутренний круг круглым */
+  background-color: #FF0074; /* Цвет внутреннего круга */
+  transform: translate(-50%, -50%); /* Центрируем внутренний круг */
+}
+
+.linesforradiobtn {
+  position: relative; /* Позволяет позиционировать псевдоэлемент */
+  padding-bottom: 24px; /* Отступ от нижней части контейнера */
+}
+
+/* Псевдоэлемент для линии */
+.linesforradiobtn::after {
+  content: '';
+  position: absolute;
+  left: -5px; /* Расстояние от левого края контейнера */
+  right: 40px; /* Расстояние от правого края контейнера */
+  bottom: 0; /* Позиционируем линию внизу контейнера */
+  height: 1px; /* Толщина линии */
+  background-color: #ECECEC; /* Цвет линии */
+}
+
+
+._rectangle166::placeholder {  
+
+  left: 0;    
+  right: 0;    
+  top: 0;    
+  bottom: 0;    
+  background:none;    
+   
+  border: none;    
+
+  font-family: 'Inter';   
+  font-style: normal;   
+  font-weight: 400;   
+  font-size: 16px;   
+  line-height: 126%;   
+  color: #6D6D6D; 
+ 
+}
+._rectangle166 {  
+     
+   width: calc(100% - 22px);
+   padding-left: 20px;
+   margin-top: -0.7px;
+ 
+   padding-top: 0px;
+   padding-bottom: 1.5px;
+   height: calc(100% - 0px);   
+    background: #FFFFFF;    
+    border-radius: 13px;    
+    border: none;    
+    
+    font-family: 'Inter';   
+    font-style: normal;   
+    font-weight: 400;   
+    font-size: 16px;   
+    line-height: 126%;   
+    color: #000000; 
+ 
+}
+
+._rectangle166:focus,
+._rectangle166:hover {
+    outline: none; /* Убирает обводку */
+    border: none; /* Убедитесь, что обводка не добавляется */
+}
+
+/* Убираем обводку при фокусе */
+._rectangle166:focus { 
+    outline: none; /* Убираем стандартную обводку */
+} 
