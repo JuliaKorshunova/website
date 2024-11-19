@@ -1,0 +1,117 @@
+.modal-contentsettings {
+    /* position: fixed; */
+    background: white;
+    border-radius: 40px;
+    width: 64vw;
+    height: 1200px;
+  
+    z-index: 1001;
+    margin-top: 100px;
+   
+   
+  
+  }
+  body.modal-open {
+    /* overflow: hidden; */
+}
+.checkbox-label{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 126%;
+/* or 20px */
+
+/* black */
+color: #0E0E0E;
+}
+  .checkbox-container {
+    display: flex; /* Используем flexbox для размещения элементов в строку */
+    align-items: center; /* Выравнивание по центру по вертикали */
+}
+
+.checkbox-input {
+    display: none; /* Скрываем стандартный чекбокс */
+}
+
+.custom-checkbox {
+    width: 20px; /* Ширина чекбокса */
+    height: 20px; /* Высота чекбокса */
+    background-color: #ffffff; /* Цвет фона */
+    border-radius: 6px; /* Закругление углов */
+    position: relative; /* Для позиционирования внутреннего элемента */
+    cursor: pointer; /* Курсор указывает на возможность клика */
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+    z-index: 1100;
+}
+
+.checkbox-input:checked + .custom-checkbox {
+    background-color: #ffffff; /* Цвет фона при checked */
+}
+
+/* Позиционирование галочки*/
+.checkbox-input:checked + .custom-checkbox::after {
+    content: ''; /* Создание внутренняя метка */
+    position: absolute;
+    left: 50%; /* Центрируем по горизонтали */
+    top: 50%; /* Центрируем по вертикали */
+    width: 5px; /* Ширина галочки */
+    height: 14px; /* Высота галочки */
+   
+    border: solid #69FF12; /* Цвет галочки */
+    border-width: 0 2px 2px 0; /* Форматирование галочки */
+    transform: translate(-45%, -55%) rotate(45deg); /* Поворачиваем и центрируем галочку */
+}
+.blockforcheckbox {
+    height: 20px; /* Высота блока */
+    width: 20px; /* Ширина блока */
+    background: #FF0074; /* Цвет фона */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 50; /* Позиция слева */
+    top: 660; /* Позиция сверху */
+    z-index: 1095; /* Задний план */
+}
+.bgforbtnexit{
+    height: 39px;
+ width: auto;
+    background: #FF0F0F;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+}
+
+.btnnForRegPodcaster1{
+    margin-top: 20; /* Увеличьте значение по мере необходимости */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .bgforbtnsave{
+
+    height: 39px;
+    
+    display: table-cell; 
+    background: #FF0074;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding: 0px;
+  }
+  .test1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+    .inputplustext{
+      display: grid;
+      grid-template-columns: 1fr; /* Одну колонку */
+      gap: 8px; /* Отступ между элементами */
+    }
+    
+ 
